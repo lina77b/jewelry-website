@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Luna Jewelry pour toute question ou demande.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <title>Luna Jewelry - Contact</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="Logo luna jewelry">
+                Luna jewelry
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li>
+                    <a href="../index.html" class="nav-link">
+                        <img src="../images/home.png" alt="Accueil" class="nav-icon"> Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="categories.html" class="nav-link">
+                        <img src="../images/category.png" alt="Catégories" class="nav-icon"> Catégories
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="reparation.html" class="nav-link">
+                        <img src="../images/maintenance.png" alt="Réparation" class="nav-icon"> Réparation
+                    </a>
+                </li>
+                <li>
+                    <a href="panier.html" class="nav-link">
+                        <img src="../images/shopping-cart.png" alt="Panier" class="nav-icon"> Panier 
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="autentification.html" class="nav-link">
+                        <img src="../images/user.png" alt="Profil" class="nav-icon"> Profil
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="inscription.html" class="nav-link">Inscription</a></li>
+                        <li><a href="autentification.html" class="nav-link">Authentification</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   <main>
+        <div class="contenu">
+            <div class="entete">
+                <h1>Contactez-nous</h1>
+                <p>Besoin d'aide ? Ou souhaitez-vous formuler une demande de réparation ?<br>
+                   Expliquez-nous ce dont vous avez besoin.</p>
+            </div>
+            <form class="formulaire-contact" id="formulaireContact">
+                <div class="formulaire">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+                <div class="formulaire">
+                    <label for="email">Adresse Email</label>
+                    <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                </div>
+                <div class="formulaire">
+                    <label for="message">Commentaire</label>
+                    <textarea id="message" name="message" placeholder="Décrivez votre demande en détail..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h2>Contactez-nous</h2>
+        <div class="con">
+            <a href="mailto:contact@lunajewelry.com"><img src="../images/icons8-email-open-50.png" alt="email"></a>
+            <a href="tel:+1234567890"><img src="../images/icons8-phone-80.png" alt="telephone"></a>
+            <a href="https://www.tiktok.com/@lunajewelry"><img src="../images/icons8-tiktok-logo-94.png" alt="tiktok"></a>
+            <a href="https://www.facebook.com/lunajewelry"><img src="../images/icons8-facebook-logo-48.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/lunajewelry"><img src="../images/icons8-instagram-logo-94.png" alt="instagram"></a>
+        </div>
+       
+        <p>© 2025 Luna Jewelry. Tous droits réservés.</p>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

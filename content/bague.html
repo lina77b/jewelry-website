@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez notre collection de bagues élégantes chez Luna Jewelry.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <title>Luna Jewelry - Bagues</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="Logo luna jewelry">
+                Luna jewelry
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li>
+                    <a href="../index.html" class="nav-link">
+                        <img src="../images/home.png" alt="Accueil" class="nav-icon"> Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="categories.html" class="nav-link active">
+                        <img src="../images/category.png" alt="Catégories" class="nav-icon"> Catégories
+                    </a>
+                  
+                </li>
+                <li>
+                    <a href="reparation.html" class="nav-link">
+                        <img src="../images/maintenance.png" alt="Réparation" class="nav-icon"> Réparation
+                    </a>
+                </li>
+                <li>
+                    <a href="panier.html" class="nav-link">
+                        <img src="../images/shopping-cart.png" alt="Panier" class="nav-icon"> Panier <span id="cart-count">0</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="autentification.html" class="nav-link">
+                        <img src="../images/user.png" alt="Profil" class="nav-icon"> Profil
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="inscription.html" class="nav-link">Inscription</a></li>
+                        <li><a href="autentification.html" class="nav-link">Authentification</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Nos Bagues</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="../images/bague1.png" alt="Bague Argent" onerror="this.src='../images/fallback.png'">
+                    <h3>Bague Argent</h3>
+                    <p class="description">Bague Argent Rhodié Garanti la pierre bleu princières.</p>
+                    <p class="price">2500 DZD</p>
+                    <button class="btn" onclick="addToCart(1, 'Bague Argent', 2500)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/bague2.png" alt="Bague argent rhodié" onerror="this.src='../images/fallback.png'">
+                    <h3>Bague argent rhodié</h3>
+                    <p class="description">Bague argent rhodié tendance avec un motif vert.</p>
+                    <p class="price">2300 DZD</p>
+                    <button class="btn" onclick="addToCart(2, 'Bague argent rhodié', 2300)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/bague3.png" alt="Bague Argent Rhodié Pandora" onerror="this.src='../images/fallback.png'">
+                    <h3>Bague Argent Rhodié Pandora</h3>
+                    <p class="description">Bague Argent Rhodié Pandora. Motif Cœur mauve.</p>
+                    <p class="price">2700 DZD</p>
+                    <button class="btn" onclick="addToCart(3, 'Bague Argent Rhodié Pandora', 2700)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/bague4.png" alt="Bague en Plaqué Or" onerror="this.src='../images/fallback.png'">
+                    <h3>Bague en Plaqué Or</h3>
+                    <p class="description">Bague en Plaqué Or Xuping Xp tendance.</p>
+                    <p class="price">500 DZD</p>
+                    <button class="btn" onclick="addToCart(4, 'Bague en Plaqué Or', 500)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/bague5.png" alt="Bague feuille en argent et zircon Anushka Sharma" onerror="this.src='../images/fallback.png'">
+                    <h3>Bague feuille en argent et zircon Anushka Sharma</h3>
+                    <p class="description">Bague feuille en argent et zircon Anushka Sharma.</p>
+                    <p class="price">3500 DZD</p>
+                    <button class="btn" onclick="addToCart(5, 'Bague feuille en argent et zircon Anushka Sharma', 3500)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/bague6.png" alt="Bague Or" onerror="this.src='../images/fallback.png'">
+                    <h3>Bague Or</h3>
+                    <p class="description">Bague Fleur Dorée.</p>
+                    <p class="price">3000 DZD</p>
+                    <button class="btn" onclick="addToCart(6, 'Bague Or', 3000)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/bague7.png" alt="Bague Doré" onerror="this.src='../images/fallback.png'">
+                    <h3>Bague Doré</h3>
+                    <p class="description">Bague Papillon cœur Doré.</p>
+                    <p class="price">5000 DZD</p>
+                    <button class="btn" onclick="addToCart(7, 'Bague Doré', 5000)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/bague8.png" alt="Bague infini" onerror="this.src='../images/fallback.png'">
+                    <h3>Bague infini</h3>
+                    <p class="description">Bague de grâce infinie en or.</p>
+                    <p class="price">3800 DZD</p>
+                    <button class="btn" onclick="addToCart(8, 'Bague infini', 3800)">Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Contactez-nous</h2>
+        <div class="con">
+            <a href="mailto:contact@lunajewelry.com"><img src="../images/icons8-email-open-50.png" alt="email"></a>
+            <a href="tel:+1234567890"><img src="../images/icons8-phone-80.png" alt="telephone"></a>
+            <a href="https://www.tiktok.com/@lunajewelry"><img src="../images/icons8-tiktok-logo-94.png" alt="tiktok"></a>
+            <a href="https://www.facebook.com/lunajewelry"><img src="../images/icons8-facebook-logo-48.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/lunajewelry"><img src="../images/icons8-instagram-logo-94.png" alt="instagram"></a>
+        </div>
+         <div>
+           <a href="contact.html"> Besoin d'aide ?</a>
+        </div>
+        <p>© 2025 Luna Jewelry. Tous droits réservés.</p>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

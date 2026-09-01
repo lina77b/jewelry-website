@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Votre panier chez Luna Jewelry - Finalisez votre commande avec élégance.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <title>Luna Jewelry - Panier</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="Logo luna jewelry">
+                Luna jewelry
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li>
+                    <a href="../index.html" class="nav-link">
+                        <img src="../images/home.png" alt="Accueil" class="nav-icon"> Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="categories.html" class="nav-link">
+                        <img src="../images/category.png" alt="Catégories" class="nav-icon"> Catégories
+                    </a>
+                </li>
+                <li>
+                    <a href="reparation.html" class="nav-link">
+                        <img src="../images/maintenance.png" alt="Réparation" class="nav-icon"> Réparation
+                    </a>
+                </li>
+                <li>
+                    <a href="panier.html" class="nav-link active">
+                        <img src="../images/shopping-cart.png" alt="Panier" class="nav-icon"> Panier <span id="cart-count">0</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="autentification.html" class="nav-link">
+                        <img src="../images/user.png" alt="Profil" class="nav-icon"> Profil
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="inscription.html" class="nav-link">Inscription</a></li>
+                        <li><a href="autentification.html" class="nav-link">Authentification</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-page">
+            <h2>Votre Panier</h2>
+            <div class="cart-content">
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Prix Unitaire</th>
+                            <th>Quantité</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items"></tbody>
+                </table>
+                <div class="cart-summary" id="cart-summary">
+                    <p>Sous-total: <span id="subtotal">0,00 DZD</span></p>
+                    <p>Frais de livraison: <span id="shipping">0,00 DZD</span></p>
+                    <p><strong>Total: <span id="total">0,00 DZD</strong></p>
+                    <button id="validate-cart-btn" class="btn">Valider le panier</button>
+                </div>
+                <div id="delivery-form" style="display: none;">
+                    <h3>Livraison</h3>
+                    <form id="delivery-details">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" placeholder="Votre nom complet" required minlength="2">
+                        <label for="address">Adresse de livraison</label>
+                        <input type="text" id="address" placeholder="Votre adresse" required minlength="5">
+                        <label for="phone">Numéro de téléphone</label>
+                        <input type="tel" id="phone" placeholder="Votre numéro de téléphone" required pattern="[0-9]{10}">
+                        <label for="wilaya">Wilaya</label>
+                        <select id="wilaya" required>
+                            <option value="">--Sélectionner--</option>
+                            <option value="Adrar">Adrar</option>
+                            <option value="Chlef">Chlef</option>
+                            <option value="Laghouat">Laghouat</option>
+                            <option value="Oum El Bouaghi">Oum El Bouaghi</option>
+                            <option value="Batna">Batna</option>
+                            <option value="Béjaïa">Béjaïa</option>
+                            <option value="Biskra">Biskra</option>
+                            <option value="Béchar">Béchar</option>
+                            <option value="Blida">Blida</option>
+                            <option value="Bouira">Bouira</option>
+                            <option value="Tamanrasset">Tamanrasset</option>
+                            <option value="Tébessa">Tébessa</option>
+                            <option value="Tlemcen">Tlemcen</option>
+                            <option value="Tiaret">Tiaret</option>
+                            <option value="Tizi Ouzou">Tizi Ouzou</option>
+                            <option value="Alger">Alger</option>
+                            <option value="Djelfa">Djelfa</option>
+                            <option value="Jijel">Jijel</option>
+                            <option value="Sétif">Sétif</option>
+                            <option value="Saïda">Saïda</option>
+                            <option value="Skikda">Skikda</option>
+                            <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
+                            <option value="Annaba">Annaba</option>
+                            <option value="Guelma">Guelma</option>
+                            <option value="Constantine">Constantine</option>
+                            <option value="Médéa">Médéa</option>
+                            <option value="Mostaganem">Mostaganem</option>
+                            <option value="M'Sila">M'Sila</option>
+                            <option value="Mascara">Mascara</option>
+                            <option value="Ouargla">Ouargla</option>
+                            <option value="Oran">Oran</option>
+                            <option value="El Bayadh">El Bayadh</option>
+                            <option value="Illizi">Illizi</option>
+                            <option value="Bordj Bou Arréridj">Bordj Bou Arréridj</option>
+                            <option value="Boumerdès">Boumerdès</option>
+                            <option value="El Tarf">El Tarf</option>
+                            <option value="Tindouf">Tindouf</option>
+                            <option value="Tissemsilt">Tissemsilt</option>
+                            <option value="El Oued">El Oued</option>
+                            <option value="Khenchela">Khenchela</option>
+                            <option value="Souk Ahras">Souk Ahras</option>
+                            <option value="Tipaza">Tipaza</option>
+                            <option value="Mila">Mila</option>
+                            <option value="Aïn Defla">Aïn Defla</option>
+                            <option value="Naâma">Naâma</option>
+                            <option value="Aïn Témouchent">Aïn Témouchent</option>
+                            <option value="Ghardaïa">Ghardaïa</option>
+                            <option value="Relizane">Relizane</option>
+                            <option value="Timimoun">Timimoun</option>
+                            <option value="Bordj Badji Mokhtar">Bordj Badji Mokhtar</option>
+                            <option value="Ouled Djellal">Ouled Djellal</option>
+                            <option value="Béni Abbès">Béni Abbès</option>
+                            <option value="In Salah">In Salah</option>
+                            <option value="In Guezzam">In Guezzam</option>
+                            <option value="Touggourt">Touggourt</option>
+                            <option value="Djanet">Djanet</option>
+                            <option value="El M'Ghair">El M'Ghair</option>
+                            <option value="El Meniaa">El Meniaa</option>
+                        </select>
+                        <button type="submit" id="proceed-payment-btn" class="btn">Passer au paiement</button>
+                    </form>
+                </div>
+                <div id="payment-form" style="display: none;">
+                    <h3>Mode de paiement</h3>
+                    <form id="payment-details">
+                        <label for="payment">Mode de paiement</label>
+                        <select id="payment" required>
+                            <option value="">--Sélectionner--</option>
+                            <option value="credit">Carte de crédit</option>
+                            <option value="BaridiMob">BaridiMob</option>
+                            <option value="cash">Paiement à la livraison</option>
+                        </select>
+                        <button type="submit" id="confirm-order-btn" class="btn">Confirmer la commande</button>
+                    </form>
+                </div>
+                <div id="order-details" style="display: none;">
+                    <h3>Détails de votre commande</h3>
+                    <div id="order-content"></div>
+                    <a href="../index.html" class="btn">Retour à la boutique</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Contactez-nous</h2>
+        <div class="con">
+            <a href="mailto:contact@lunajewelry.com"><img src="../images/icons8-email-open-50.png" alt="email"></a>
+            <a href="tel:+1234567890"><img src="../images/icons8-phone-80.png" alt="telephone"></a>
+            <a href="https://www.tiktok.com/@lunajewelry"><img src="../images/icons8-tiktok-logo-94.png" alt="tiktok"></a>
+            <a href="https://www.facebook.com/lunajewelry"><img src="../images/icons8-facebook-logo-48.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/lunajewelry"><img src="../images/icons8-instagram-logo-94.png" alt="instagram"></a>
+        </div>
+        <div>
+            <a href="contact.html">Besoin d'aide ?</a>
+        </div>
+        <p>© 2025 Luna Jewelry. Tous droits réservés.</p>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez notre collection de colliers élégants chez Luna Jewelry.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <title>Luna Jewelry - Colliers</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png" alt="Logo luna jewelry">
+                Luna jewelry
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li>
+                    <a href="../index.html" class="nav-link">
+                        <img src="../images/home.png" alt="Accueil" class="nav-icon"> Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="categories.html" class="nav-link active">
+                        <img src="../images/category.png" alt="Catégories" class="nav-icon"> Catégories
+                    </a>
+                </li>
+                <li>
+                    <a href="reparation.html" class="nav-link">
+                        <img src="../images/maintenance.png" alt="Réparation" class="nav-icon"> Réparation
+                    </a>
+                </li>
+                <li>
+                    <a href="panier.html" class="nav-link">
+                        <img src="../images/shopping-cart.png" alt="Panier" class="nav-icon"> Panier 
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="autentification.html" class="nav-link">
+                        <img src="../images/user.png" alt="Profil" class="nav-icon"> Profil
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="inscription.html" class="nav-link">Inscription</a></li>
+                        <li><a href="autentification.html" class="nav-link">Authentification</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Nos Colliers</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="../images/collier1.png" alt="Collier Donatiane Argent Blanc" onerror="this.src='../images/fallback.png'">
+                    <h3>Collier Donatiane Argent Blanc</h3>
+                    <p class="description">Collier Donatiane Argent Blanc Oxyde De Zirconium.</p>
+                    <p class="price">2500 DZD</p>
+                    <button class="btn" onclick="addToCart(17, 'Collier Donatiane Argent Blanc', 2500)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/collier2.png" alt="Collier Plaqué Or Jaune Lettra" onerror="this.src='../images/fallback.png'">
+                    <h3>Collier Plaqué Or Jaune Lettra</h3>
+                    <p class="description">Collier Plaqué Or Jaune Lettra.</p>
+                    <p class="price">2300 DZD</p>
+                    <button class="btn" onclick="addToCart(18, 'Collier Plaqué Or Jaune Lettra', 2300)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/collier3.png" alt="Collier Or Jaune Nacre Ange" onerror="this.src='../images/fallback.png'">
+                    <h3>Collier Or Jaune Nacre Ange</h3>
+                    <p class="description">Collier Or Jaune 375/1000 Nacre Motif Ange.</p>
+                    <p class="price">2300 DZD</p>
+                    <button class="btn" onclick="addToCart(19, 'Collier Or Jaune Nacre Ange', 2300)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/collier4.png" alt="Collier Hallie Or Jaune Malachite" onerror="this.src='../images/fallback.png'">
+                    <h3>Collier Hallie Or Jaune Malachite</h3>
+                    <p class="description">Collier Hallie Or Jaune Malachite.</p>
+                    <p class="price">500 DZD</p>
+                    <button class="btn" onclick="addToCart(20, 'Collier Hallie Or Jaune Malachite', 500)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/collier5.png" alt="Collier Sulivia Papillon Or Jaune" onerror="this.src='../images/fallback.png'">
+                    <h3>Collier Sulivia Papillon Or Jaune</h3>
+                    <p class="description">Collier Sulivia Papillon Or Jaune.</p>
+                    <p class="price">3900 DZD</p>
+                    <button class="btn" onclick="addToCart(21, 'Collier Sulivia Papillon Or Jaune', 3900)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/collier6.png" alt="Collier Alexine Or Jaune Zirconium" onerror="this.src='../images/fallback.png'">
+                    <h3>Collier Alexine Or Jaune Zirconium</h3>
+                    <p class="description">Collier Alexine Or Jaune Oxyde De Zirconium.</p>
+                    <p class="price">3300 DZD</p>
+                    <button class="btn" onclick="addToCart(22, 'Collier Alexine Or Jaune Zirconium', 3300)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/collier7.png" alt="Collier Hilarionne Argent Blanc Ambre" onerror="this.src='../images/fallback.png'">
+                    <h3>Collier Hilarionne Argent Blanc Ambre</h3>
+                    <p class="description">Collier Hilarionne Argent Blanc Ambre.</p>
+                    <p class="price">5000 DZD</p>
+                    <button class="btn" onclick="addToCart(23, 'Collier Hilarionne Argent Blanc Ambre', 5000)">Ajouter au panier</button>
+                </div>
+                <div class="product">
+                    <img src="../images/collier8.png" alt="Collier Lovina Or Jaune" onerror="this.src='../images/fallback.png'">
+                    <h3>Collier Lovina Or Jaune</h3>
+                    <p class="description">Collier Lovina Or Jaune.</p>
+                    <p class="price">3800 DZD</p>
+                    <button class="btn" onclick="addToCart(24, 'Collier Lovina Or Jaune', 3800)">Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Contactez-nous</h2>
+        <div class="con">
+            <a href="mailto:contact@lunajewelry.com"><img src="../images/icons8-email-open-50.png" alt="email"></a>
+            <a href="tel:+1234567890"><img src="../images/icons8-phone-80.png" alt="telephone"></a>
+            <a href="https://www.tiktok.com/@lunajewelry"><img src="../images/icons8-tiktok-logo-94.png" alt="tiktok"></a>
+            <a href="https://www.facebook.com/lunajewelry"><img src="../images/icons8-facebook-logo-48.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/lunajewelry"><img src="../images/icons8-instagram-logo-94.png" alt="instagram"></a>
+        </div>
+         <div>
+           <a href="contact.html"> Besoin d'aide ?</a>
+        </div>
+        <p>© 2025 Luna Jewelry. Tous droits réservés.</p>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
